@@ -5,5 +5,12 @@
   </h1>
   <img width="300" alt="Angular Logo" src="../assets/img/brunito.svg">
 </div>
+<div class="itesm">
+  <ul>
+    <li *ngFor="let item of items | async">
+      <pre>{{ item | json }}</pre>
+    </li>
+  </ul>
+</div>
 
 <router-outlet></router-outlet>
